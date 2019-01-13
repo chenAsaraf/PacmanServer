@@ -4,6 +4,32 @@
 the game works on a server which saves all the games running on every computer.
 it saves the id, time, points and the id of the game that was played.
 
+### FOR THE PROGRAMMERS BETWEEN US
+### we will describe in general how the code works:
+Packmans - robots with mobility, spatial orientations, speed characteristics and eating radius
+* their job is to "help" us eat the fruits
+
+Fruits - static objects in the field with different weights.
+
+Blocks - static objects in the field that we cant go through them
+
+Ghosts - robots with mobility, spatial orientations, speed characteristics
+* their job is to chase us and damage our points, can go through blocks
+
+Player - our robot with mobility, spatial orientations, speed characteristics and eating radius
+* our job is to eat all the fruits and pacmans before the time is up 
+
+ShortestPathAlgo - The main algorithm class uses a greedy algorithm, and search for the fruit that is closest to player at the moment. The solution is represented by a list of Pathes.
+
+Path – a list of Fruits which belongs to the Player in the game. (Can be empty - according to the algorithm).
+
+Map - initializes a generic map file by String 'path' of the image and a maximum left and minimum right coordinate point of the map that defines the map. It has static functions that define the conversion of global coordinates and pixels on and off the image.
+
+GUI Package - Initializes the game on a map board, allows placing individual Player by pressing the mouse and loading Pacmans, Fruits, Blocks and Ghosts from an existing csv file. The center of the game is running animation Player according to the algorithm in real time.
+
+SQL - has all the data of all the games that have been played on this server, saves the id's of the players, the time they played, their scores in each game and the id of the game they played. then it prints in the console after the game is over what is their place in the records table comparing their other games and comparing the other players in this game.
+
+## 
 ### GPS APP:
 Calculates azimuth and distance for any two coordinates,
 Converts csv files into GIS collection (elements and layers).
