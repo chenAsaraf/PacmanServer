@@ -27,7 +27,7 @@ Map - initializes a generic map file by String 'path' of the image and a maximum
 
 GUI Package - Initializes the game on a map board, allows placing individual Player by pressing the mouse and loading Pacmans, Fruits, Blocks and Ghosts from an existing csv file. The center of the game is running animation Player according to the algorithm in real time.
 
-SQL - has all the data of all the games that have been played on this server, saves the id's of the players, the time they played, their scores in each game and the id of the game they played. then it prints in the console after the game is over what is their place in the records table comparing their other games and comparing the other players in this game.
+SQL - has all the data of all the games that have been played on this server, saves the id's of the players, the time they played, their scores in each game and the id of the game they played. then it prints in the console after the game is over what is our place in the records table comparing our other games and comparing the other players in this game.
 
 ## 
 ### GPS APP:
