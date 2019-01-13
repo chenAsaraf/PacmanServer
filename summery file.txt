@@ -1,0 +1,29 @@
+The scenarios can be divided into four types:
+
+Scenario # 1 :  files number: 1 , 2
+
+No blocks and ghosts, only pacmans
+
+Scenario # 2 :  files number: 3 , 6
+
+No pacmans and ghosts, only blocks
+
+Scenario # 3 :  files number: 4 , 7
+
+No ghosts, only pacmans and blocks
+
+Scenario # 4 :  files number: 5 , 8 , 9
+
+The most complex scenario - there are pacmans, obstacles and ghosts trying to eat the main player
+
+The Algorythm:
+
+General principle: 
+The pacmans help the player finish the game faster, they eat the fruits and the player can eat the fruits and the pacmans.
+After the game ends the remaining time will be points in my favor.
+
+Note: The pacmans will have less weight than the fruits.
+When calculating the algorythm, we will take into account the distance and weight of the targets, so if there is a pacman that is not close enough to the main player it wont get priority
+In each scenario the best score will be made if the player will be inserted on a group of fruits.
+
+**On the 8's scenario our best score was 48.6**
